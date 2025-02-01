@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="/helloworld/web dev/website/images/favicon.png"
+      type="image/png"
+      sizes="192x192"
+    />
+    <link rel="stylesheet" href="product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Brushstrokes: Product</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <button class="back-button" onclick="history.back()">
+          <img
+            src="/helloworld/web dev/website/images/back-icon.svg"
+            alt="back-button"
+          />
+        </button>
+        <div class="logo-container">
+          <img src="/helloworld/web dev/website/images/logo.png" alt="Logo" />
+        </div>
+        <div class="nav-links-container"></div>
+        <ul class="nav-links">
+          <li>
+            <a href="/helloworld/web dev/website/brushstrokes.html">Home</a>
+          </li>
+          <li>
+            <a href="/helloworld/web dev/website/files/about.html">About</a>
+          </li>
+          <li>
+            <a href="/helloworld/web dev/website/files/gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a href="/helloworld/web dev/website/files/profile.html">Profile</a>
+          </li>
+        </ul>
+        <a
+          href="/helloworld/web dev/website/files/product.html"
+          class="connect-button"
+          >Products</a
+        >
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+      <ul class="mobile-nav-links">
+        <li>
+          <a href="/helloworld/web dev/website/brushstrokes.html">Home</a>
+        </li>
+        <li>
+          <a href="/helloworld/web dev/website/files/about.html">About</a>
+        </li>
+        <li>
+          <a href="/helloworld/web dev/website/files/gallery.html">Gallery</a>
+        </li>
+        <li>
+          <a
+            href="/helloworld/web dev/website/files/profile.html"
+            class="active"
+            >Profile</a
+          >
+        </li>
+        <li>
+          <a
+            href="/helloworld/web dev/website/files/product.html"
+            class="connect-button"
+            >Products</a
+          >
+        </li>
+      </ul>
+    </div>
+    <section class="product" id="product">
+      <h1>Products</h1>
+
+      <!-- Filter Options (Hidden radio buttons) -->
+      <input type="radio" id="all" name="filter" checked />
+      <input type="radio" id="keychain" name="filter" />
+      <input type="radio" id="accessories" name="filter" />
+      <input type="radio" id="others" name="filter" />
+
+      <!-- Portfolio Gallery -->
+      <div class="product-gallery">
+        <div class="item accessories">
+          <img
+            src="/helloworld/web dev/website/images/p1.jpg"
+            alt="Angry Emote Hairclip"
+          />
+          <p class="name">
+            Sketchbook<br />
+            <span class="prc">$20</span>
+          </p>
+        </div>
+        <div class="item accessories">
+          <img
+            src="/helloworld/web dev/website/images/p3.jpg"
+            alt="Krusty Krab Hat Hairclip"
+          />
+          <p class="name">
+            Charcoal Pencil<br />
+            <span class="prc">$5</span>
+          </p>
+        </div>
+        <div class="item accessories">
+          <img
+            src="/helloworld/web dev/website/images/p2.jpg"
+            alt="Remi Chef Hairband"
+          />
+          <p class="name">
+            Eraser<br />
+            <span class="prc">$2</span>
+          </p>
+        </div>
+        <div class="item accessories">
+          <img
+            src="/helloworld/web dev/website/images/p4.jpg"
+            alt="Stem Hairclip"
+          />
+          <p class="name">
+            Acrylic Paint<br />
+            <span class="prc">$12</span>
+          </p>
+        </div>
+        <div class="item keychain">
+          <img
+            src="/helloworld/web dev/website/images/p5.jpg"
+            alt="Strawberry Keychain"
+          />
+          <p class="name">
+            Watercolor<br />
+            <span class="prc">$8</span>
+          </p>
+        </div>
+        <div class="item accessories">
+          <img
+            src="/helloworld/web dev/website/images/p7.jpg"
+            alt="Stripe Cat Beannie"
+          />
+          <p class="name">
+            Brushes<br />
+            <span class="prc">$15</span>
+          </p>
+        </div>
+        <div class="item keychain">
+          <img
+            src="/helloworld/web dev/website/images/p6.jpg"
+            alt="Kirby Keychain"
+          />
+          <p class="name">
+            Air-dry Clay<br />
+            <span class="prc">$7</span>
+          </p>
+        </div>
+        <div class="item others">
+          <img
+            src="/helloworld/web dev/website/images/p8.jpg"
+            alt="Cat Coaster"
+          />
+          <p class="name">
+            Sculpting Tools<br />
+            <span class="prc">$5</span>
+          </p>
+        </div>
+        <div class="item keychain">
+          <img
+            src="/helloworld/web dev/website/images/p9.jpg"
+            alt="Cat Keychain"
+          />
+          <p class="name">
+            Beads<br />
+            <span class="prc">$8</span>
+          </p>
+        </div>
+        <div class="item others">
+          <img
+            src="/helloworld/web dev/website/images/p10.jpg"
+            alt="Soot Sprite Purse"
+          />
+          <p class="name">
+            Yarn?<br />
+            <span class="prc">$7</span>
+          </p>
+        </div>
+        <div class="item keychain">
+          <img
+            src="/helloworld/web dev/website/images/p11.jpg"
+            alt="Cat Keychain"
+          />
+          <p class="name">
+            Highlighter<br />
+            <span class="prc">$8</span>
+          </p>
+        </div>
+        <div class="item others">
+          <img
+            src="/helloworld/web dev/website/images/p12.jpg"
+            alt="Soot Sprite Purse"
+          />
+          <p class="name">
+            Linocut Supplies<br />
+            <span class="prc">$7</span>
+          </p>
+        </div>
+        <div class="item keychain">
+          <img
+            src="/helloworld/web dev/website/images/p13.jpg"
+            alt="Cat Keychain"
+          />
+          <p class="name">
+            Fabric Dye<br />
+            <span class="prc">$8</span>
+          </p>
+        </div>
+        <div class="item others">
+          <img
+            src="/helloworld/web dev/website/images/p14.jpg"
+            alt="Soot Sprite Purse"
+          />
+          <p class="name">
+            Silk<br />
+            <span class="prc">$7</span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const mobileNav = document.querySelector(".mobile-nav");
+
+    hamburgerMenu.addEventListener("click", () => {
+      mobileNav.classList.toggle("open");
+    });
+
+    mobileNav.addEventListener("click", () => {
+      mobileNav.classList.remove("open");
+    });
+  </script>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>Brushstrokes</h3>
+        <p>
+          Your one-stop shop for all your art material needs. Quality products
+          for creative minds.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li>
+            <a href="/helloworld/web dev/website/brushstrokes.html">Home</a>
+          </li>
+          <li>
+            <a href="/helloworld/web dev/website/files/about.html">About Us</a>
+          </li>
+          <li>
+            <a href="/helloworld/web dev/website/files/product.html"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a href="/helloworld/web dev/website/files/profile.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

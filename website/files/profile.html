@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="/helloworld/web dev/website/images/favicon.png"
+      type="image/png"
+      sizes="192x192"
+    />
+    <link rel="stylesheet" href="profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Brushstrokes: Profile</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <button class="back-button" onclick="history.back()">
+          <img
+            src="/helloworld/web dev/website/images/back-icon.svg"
+            alt="back-button"
+          />
+        </button>
+        <div class="logo-container">
+          <img src="/helloworld/web dev/website/images/logo.png" alt="Logo" />
+        </div>
+        <div class="nav-links-container"></div>
+        <ul class="nav-links">
+          <li>
+            <a href="/helloworld/web dev/website/brushstrokes.html">Home</a>
+          </li>
+          <li>
+            <a href="/helloworld/web dev/website/files/about.html">About</a>
+          </li>
+          <li>
+            <a href="/helloworld/web dev/website/files/gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a
+              href="/helloworld/web dev/website/files/profile.html"
+              class="active"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <a
+          href="/helloworld/web dev/website/files/product.html"
+          class="connect-button"
+          >Products</a
+        >
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+      <ul class="mobile-nav-links">
+        <li>
+          <a href="/helloworld/web dev/website/brushstrokes.html">Home</a>
+        </li>
+        <li>
+          <a href="/helloworld/web dev/website/files/about.html">About</a>
+        </li>
+        <li>
+          <a href="/helloworld/web dev/website/files/gallery.html">Gallery</a>
+        </li>
+        <li>
+          <a
+            href="/helloworld/web dev/website/files/profile.html"
+            class="active"
+            >Profile</a
+          >
+        </li>
+        <li>
+          <a
+            href="/helloworld/web dev/website/files/product.html"
+            class="connect-button"
+            >Products</a
+          >
+        </li>
+      </ul>
+    </div>
+    <section>
+      <div class="contact-section">
+        <div class="contact-container">
+          <h2>Contact Us</h2>
+          <p>
+            We'd love to hear from you! Reach out to us using the form below or
+            through our contact details.
+          </p>
+
+          <div class="contact-info">
+            <p><strong>Email:</strong> Brushstrokes@gmail.com</p>
+            <p><strong>Phone:</strong>0991 971 5038</p>
+            <p>
+              <strong>Address:</strong> 123 Art Street, Creative City,
+              Philippines
+            </p>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const mobileNav = document.querySelector(".mobile-nav");
+
+    hamburgerMenu.addEventListener("click", () => {
+      mobileNav.classList.toggle("open");
+    });
+
+    mobileNav.addEventListener("click", () => {
+      mobileNav.classList.remove("open");
+    });
+  </script>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>Brushstrokes</h3>
+        <p>
+          Your one-stop shop for all your art material needs. Quality products
+          for creative minds.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li>
+            <a href="/helloworld/web dev/website/brushstrokes.html">Home</a>
+          </li>
+          <li>
+            <a href="/helloworld/web dev/website/files/about.html">About Us</a>
+          </li>
+          <li>
+            <a href="/helloworld/web dev/website/files/product.html"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a href="/helloworld/web dev/website/files/profile.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
